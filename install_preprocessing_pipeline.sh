@@ -3,7 +3,7 @@
 cd src/pixel3dmm/preprocessing/
 
 # facer repository
-git clone git@github.com:FacePerceiver/facer.git
+git clone https://github.com/FacePerceiver/facer.git
 cd facer
 cp ../replacement_code/farl.py facer/face_parsing/farl.py
 cp ../replacement_code/facer_transform.py facer/transform.py
@@ -11,7 +11,7 @@ pip install -e .
 cd ..
 
 # MICA
-git clone git@github.com:Zielon/MICA.git
+git clone https://github.com/Zielon/MICA.git
 cd MICA
 cp ../replacement_code/mica_demo.py demo.py
 cp ../replacement_code/mica.py micalib/models/mica.py
@@ -39,4 +39,6 @@ cd ../../../../
 mkdir pretrained_weights
 cd pretrained_weights
 gdown --id 1SDV_8_qWTe__rX_8e4Fi-BE3aES0YzJY -O ./uv.ckpt
+
+## May need to manually download it 
 gdown --id 1KYYlpN-KGrYMVcAOT22NkVQC0UAfycMD -O ./normals.ckpt
