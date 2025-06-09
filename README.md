@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 Finally, you will need to run
 ```
-pip instal -e .
+pip install -e .
 ```
 to install `pixel3dmm` as a package.
 
